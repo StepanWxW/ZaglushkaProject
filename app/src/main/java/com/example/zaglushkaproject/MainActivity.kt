@@ -29,19 +29,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Получаем менеджер фрагментов
         val fragmentManager: FragmentManager = supportFragmentManager
 
-        // Начинаем транзакцию для добавления фрагмента
         val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
 
-        // Создаем экземпляр вашего фрагмента
         val fragmentWebView = FragmentWebView()
 
-        // Заменяем контейнер текущим фрагментом
         fragmentTransaction.replace(R.id.fragment_container, fragmentWebView)
 
-        // Подтверждаем транзакцию
         fragmentTransaction.commit()
 
 //        webView = findViewById(R.id.webView)
