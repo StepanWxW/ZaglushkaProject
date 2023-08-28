@@ -1,4 +1,4 @@
-package com.example.zaglushkaproject
+package snage.up.laaco
 
 class QuestionList {
     val questions = listOf(

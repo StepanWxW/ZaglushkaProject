@@ -1,4 +1,4 @@
-package com.example.zaglushkaproject.data
+package snage.up.laaco.data
 
 import android.content.Context
 

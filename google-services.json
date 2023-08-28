@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "199821146926",
-    "project_id": "zaglushkaproject",
-    "storage_bucket": "zaglushkaproject.appspot.com"
+    "project_number": "582244085966",
+    "project_id": "vdfgb-956b6",
+    "storage_bucket": "vdfgb-956b6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:199821146926:android:c28b5e0c902823928618bf",
+        "mobilesdk_app_id": "1:582244085966:android:f90824f64c14257135609f",
         "android_client_info": {
-          "package_name": "com.example.zaglushkaproject"
+          "package_name": "sgane.up.laaco"
         }
       },
       "oauth_client": [
         {
-          "client_id": "199821146926-iv7dok7nkopdq3e48te3bi86jtluulku.apps.googleusercontent.com",
+          "client_id": "582244085966-qjbktgm7gese4p0hgk7gsgi16gc2i9a9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBGIbMwsBKEUEQB2Cb4KqC5iHWUZ1pzonE"
+          "current_key": "AIzaSyC7a2eIpZghy6Ip6Z0ICUB6dV31bbkSn0o"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "199821146926-iv7dok7nkopdq3e48te3bi86jtluulku.apps.googleusercontent.com",
+              "client_id": "582244085966-qjbktgm7gese4p0hgk7gsgi16gc2i9a9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,4 +1,4 @@
-package com.example.zaglushkaproject
+package snage.up.laaco
 
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.zaglushkaproject.R
 import kotlin.random.Random
 
 class QuizGameActivity : AppCompatActivity() {

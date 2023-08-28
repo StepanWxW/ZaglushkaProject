@@ -24,7 +24,7 @@
         android:theme="@style/Theme.ZaglushkaProject"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="snage.up.laaco.MainActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true">
             <intent-filter>
@@ -36,7 +36,7 @@
 
         <activity
             android:configChanges="orientation|screenSize"
-            android:name=".QuizGameActivity"
+            android:name="snage.up.laaco.QuizGameActivity"
             android:label="Quiz Game" />
     </application>
 

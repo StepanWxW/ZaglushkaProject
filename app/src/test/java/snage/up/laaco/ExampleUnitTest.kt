@@ -1,4 +1,4 @@
-package com.example.zaglushkaproject
+package snage.up.laaco
 
 import org.junit.Test
 

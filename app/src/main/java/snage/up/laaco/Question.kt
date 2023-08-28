@@ -1,4 +1,4 @@
-package com.example.zaglushkaproject
+package snage.up.laaco
 
 data class Question(
     val question: String,

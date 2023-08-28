@@ -1,4 +1,4 @@
-package com.example.zaglushkaproject
+package snage.up.laaco
 
 
 import android.annotation.SuppressLint
@@ -12,7 +12,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.zaglushkaproject.data.SharedPreferencesHelper
+import com.example.zaglushkaproject.R
+import snage.up.laaco.data.SharedPreferencesHelper
 import com.google.firebase.remoteconfig.BuildConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
