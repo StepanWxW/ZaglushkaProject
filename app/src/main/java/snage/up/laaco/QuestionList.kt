@@ -50,6 +50,22 @@ class QuestionList {
         Question("Which country won the first ICC T20 World Cup?", "India", "England", "Pakistan", "South Africa", 3),
         Question("How many Grand Slam singles titles does Serena Williams hold?", "15", "20", "23", "28", 3),
         Question("Which sport is played on a rink?", "Soccer", "Basketball", "Hockey", "Baseball", 3),
-        Question("Which country has won the most gold medals in the Summer Olympics?", "United States", "China", "Russia", "Germany", 1)
-    )
+        Question("Which country has won the most gold medals in the Summer Olympics?", "United States", "China", "Russia", "Germany", 1),
+
+        Question("What sport is known as \"The Beautiful Game\"?", "Soccer", "Rugby", "Tennis", "Baseball", 1),
+        Question("In which city is the annual tennis tournament \"Wimbledon\" held?", "Paris", "New York", "London", "Melbourne", 3),
+        Question("Which country is famous for producing legendary boxer Manny Pacquiao?", "Mexico", "Philippines", "United States", "Puerto Rico", 2),
+        Question("How many players are on a standard volleyball team?", "4", "5", "6", "7", 3),
+        Question("Which golfer is often referred to as \"The Golden Bear\"?", "Tiger Woods", "Jack Nicklaus", "Arnold Palmer", "Phil Mickelson", 2),
+        Question("In which year were the first modern Paralympic Games held?", "1948", "1956", "1960", "1972", 3),
+        Question("Which sport uses a net, a shuttlecock, and rackets?", "Badminton", "Table Tennis", "Volleyball", "Squash", 1),
+        Question("Who is the only boxer to have won world titles in eight different weight divisions?", "Muhammad Ali", "Manny Pacquiao", "Mike Tyson", "Sugar Ray Leonard", 2),
+        Question("Which country won the Rugby World Cup in 2015?", "Australia", "New Zealand", "South Africa", "England", 2),
+        Question("Which sport is associated with the \"Grand Slam\" tournaments?", "Soccer", "Tennis", "Golf", "Basketball", 2),
+        Question("What is the diameter of a basketball hoop in inches?", "12 inches", "16 inches", "18 inches", "20 inches", 3),
+        Question("Which country is known for its strong tradition in Sumo wrestling?", "China", "Japan", "Mongolia", "South Korea", 2),
+        Question("In American football, what is a \"Hail Mary\" pass?", "A pass thrown to the sideline", "A short pass near the end zone", "A long pass thrown in desperation", "A pass caught with one hand", 3),
+        Question("Which player holds the record for the most home runs hit in a single MLB season?", "Babe Ruth", "Barry Bonds", "Sammy Sosa", "Mark McGwire", 2),
+        Question("Which country is known for its dominance in rugby sevens?", "South Africa", "New Zealand", "Australia", "Fiji", 4),
+        )
 }

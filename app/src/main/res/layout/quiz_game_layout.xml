@@ -5,123 +5,142 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:padding="16dp"
     tools:context="snage.up.laaco.QuizGameActivity">
-
-    <TextView
-        android:id="@+id/questionText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Question"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF" />
-
-    <TextView
-        android:id="@+id/answerOptionsText"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/questionText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF" />
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/kandinsky_download_1693227637469" />
 
-    <GridLayout
-        android:id="@+id/answerButtonsGrid"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/answerButtonsLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/answerOptionsText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:columnCount="2"
-        android:rowCount="2"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
-        android:useDefaultMargins="true">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="-1dp">
 
         <Button
-            android:id="@+id/answer1Button"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:text="A"
-            android:textColor="#000000" />
+        android:id="@+id/answer1Button"
+        style="@style/CustomButtonStyle"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="A"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/answerButtonsLayout" />
 
         <Button
             android:id="@+id/answer2Button"
-            android:layout_width="160dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:layout_marginTop="48dp"
+            style="@style/CustomButtonStyle"
             android:gravity="center"
             android:text="B"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer1Button" />
 
         <Button
             android:id="@+id/answer3Button"
-            android:layout_width="160dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:layout_marginTop="48dp"
+            style="@style/CustomButtonStyle"
             android:gravity="center"
             android:text="C"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer2Button" />
 
         <Button
             android:id="@+id/answer4Button"
-            android:layout_width="160dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:layout_marginTop="48dp"
+            style="@style/CustomButtonStyle"
             android:gravity="center"
             android:text="D"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer3Button" />
 
-    </GridLayout>
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Score: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/timerText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/answerButtonsGrid"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Time left: 10"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/livesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Lives: 3"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/scoreText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/timerText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:text="Score: 0"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            style="@style/CustomButtonStyle"
+            android:textSize="18sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/answer1Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.682" />
 
-    <TextView
-        android:id="@+id/livesText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/scoreText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:text="Lives: 3"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Time left: 10"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/restartButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/livesText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Restart"
-        android:visibility="gone"
-        android:textColor="#000000"
-        android:background="#FFFFFF" />
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            style="@style/CustomButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer4Button"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

@@ -12,7 +12,7 @@ import kotlin.random.Random
 class QuizGameActivity : AppCompatActivity() {
 
     private lateinit var questionText: TextView
-    private lateinit var answerOptionsText: TextView
+//    private lateinit var answerOptionsText: TextView
     private lateinit var answer1Button: Button
     private lateinit var answer2Button: Button
     private lateinit var answer3Button: Button
@@ -37,7 +37,7 @@ class QuizGameActivity : AppCompatActivity() {
         setContentView(R.layout.quiz_game_layout)
 
         questionText = findViewById(R.id.questionText)
-        answerOptionsText = findViewById(R.id.answerOptionsText)
+//        answerOptionsText = findViewById(R.id.answerOptionsText)
         answer1Button = findViewById(R.id.answer1Button)
         answer2Button = findViewById(R.id.answer2Button)
         answer3Button = findViewById(R.id.answer3Button)
@@ -65,8 +65,13 @@ class QuizGameActivity : AppCompatActivity() {
         currentQuestion = questions[Random.nextInt(0, questions.size)]
         questionText.text = currentQuestion.question
 
-        val answerOptions = "A. ${currentQuestion.answer1}\nB. ${currentQuestion.answer2}\nC. ${currentQuestion.answer3}\nD. ${currentQuestion.answer4}"
-        answerOptionsText.text = answerOptions
+        answer1Button.text = currentQuestion.answer1
+        answer2Button.text = currentQuestion.answer2
+        answer3Button.text = currentQuestion.answer3
+        answer4Button.text = currentQuestion.answer4
+
+//        val answerOptions = "A. ${currentQuestion.answer1}\nB. ${currentQuestion.answer2}\nC. ${currentQuestion.answer3}\nD. ${currentQuestion.answer4}"
+//        answerOptionsText.text = answerOptions
     }
 
     private fun checkAnswer(selectedAnswer: Int) {
@@ -99,7 +104,7 @@ class QuizGameActivity : AppCompatActivity() {
         answer3Button.visibility = View.GONE
         answer4Button.visibility = View.GONE
         restartButton.visibility = View.VISIBLE
-        answerOptionsText.visibility = View.GONE
+//        answerOptionsText.visibility = View.GONE
         timerText.visibility = View.GONE
         timer.cancel()
 
@@ -131,7 +136,7 @@ class QuizGameActivity : AppCompatActivity() {
         answer3Button.visibility = View.VISIBLE
         answer4Button.visibility = View.VISIBLE
         restartButton.visibility = View.GONE
-        answerOptionsText.visibility = View.VISIBLE
+//        answerOptionsText.visibility = View.VISIBLE
         updateScoreLive()
         startTimer()
     }
